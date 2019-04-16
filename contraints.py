@@ -150,7 +150,6 @@ def blind_spot(X, Y, num_blocks, theta_min, theta_max, beam_max):
 
 	for i in range(num_blocks):
 		s.add(X[i] >= 0, X[i] <= beam_max)
-		# s.add(Y[i] == tan * X[i])
 
 	check = s.check()
 	print(check)
@@ -170,10 +169,37 @@ def blind_spot(X, Y, num_blocks, theta_min, theta_max, beam_max):
 	s.model()
 
 
-	# Block Distance Constraint
+def block_distance(X, Y, num_blocks, theta_min, theta_max, beam_min, beam_max):
+
+	s = Solver()
+
 	# Beam_min <= sqrt((x_r - x_b) ^ 2 + (y_r + y_b) ^ 2) <= Beam_max
+
 	# Min(Angle_max) < = Block_angle <= Max(Angle_min)
+	block_angle = Real('block_angle')
+	s.add(min(theta_max) <= block_angle, min(theta_min) >= block_angle)
+
+	for i in range(num_blocks):
+		s.add(X[i] >= 0, X[i] <= beam_max)
+
+	check = s.check()
+	print(check)
+
+	model = s.model()
+	print(model)
+
+	print("Block Angle: ", model[block_angle])
+
 	# Y = tan(Block_angle)x
+	ba = float(model[block_angle].as_fraction())
+	tan = np.tan(ba)
+
+	for i in range(num_blocks):
+		s.add(Y[i] == tan * X[i])
+
+	s.check()
+	s.model()
+
 
 	# Block Size Constraint
 	# 0 <= sqrt((x_r - x_b) ^ 2 + (y_r + y_b) ^ 2) = Min(Beam_max)
