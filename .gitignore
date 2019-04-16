@@ -4,3 +4,9 @@
 CATKIN_IGNORE
 
 *.pyc
+
+# Ignore Catkin Build files
+**/devel/
+**/build/
+**/.catkin_tools/
+**/logs/
