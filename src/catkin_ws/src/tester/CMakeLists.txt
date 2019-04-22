@@ -13,3 +13,6 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(goal_sender src/goal_sender.cpp)
 target_link_libraries(goal_sender ${catkin_LIBRARIES})
+
+add_executable(collision_detector src/collision_detector.cpp)
+target_link_libraries(collision_detector ${catkin_LIBRARIES})

@@ -7,7 +7,7 @@
 int main(int argc, char **argv)
 {
     // Sleep to allow all other threads to start up
-    std::this_thread::sleep_for(std::chrono::milliseconds(20000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(10000));
     std::cout<<"STARTING THE TESTER THREAD"<<std::endl;
 
     ros::init(argc, argv, "goal_publisher");

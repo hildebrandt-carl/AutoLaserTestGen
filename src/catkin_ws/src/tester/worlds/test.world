@@ -9,22 +9,10 @@
       <uri>model://sun</uri>
     </include>
 
-
     <model name='unit_box_0'>
       <pose frame=''>4 0 0.5 0 -0 0</pose>
       <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
+        <collision name='box_collision'>
           <geometry>
             <box>
               <size>2 1 1</size>
@@ -52,14 +40,31 @@
           </geometry>
           <material>
             <script>
-              <name>Gazebo/Grey</name>
+              <name>Gazebo/Red</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
             </script>
           </material>
         </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
+        <self_collide>
+          0
+        </self_collide>
+        <kinematic>
+          0
+        </kinematic>
+        <gravity>
+          1
+        </gravity>
+        <sensor name="box_contact_sensor" type="contact">
+          <always_on>true</always_on>
+          <update_rate>5.0</update_rate>
+          <contact>
+            <collision>box_collision</collision>
+          </contact>
+          <plugin name="box_bumper" filename="libgazebo_ros_bumper.so">
+            <bumperTopicName>box_collision</bumperTopicName>
+            <frameName>Box</frameName>
+          </plugin>
+        </sensor>
       </link>
     </model>
   </world>

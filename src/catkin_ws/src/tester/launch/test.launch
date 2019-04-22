@@ -28,4 +28,7 @@
   <node pkg="tester" type="goal_sender" name="goal_sender_node">
   </node>
 
+  <node pkg="tester" type="collision_detector" name="collision_detector_node" output="screen">
+  </node>
+
 </launch>
