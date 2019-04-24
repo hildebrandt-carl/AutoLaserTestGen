@@ -4,9 +4,10 @@
 
   <arg name="laser_enabled" default="true"/>
   <arg name="kinect_enabled" default="false"/>
+  <arg name="world_name" default="blind.world"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find tester)/worlds/test.world"/>
+    <arg name="world_name" value="$(find tester)/worlds/$(arg world_name)"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>

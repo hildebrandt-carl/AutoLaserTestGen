@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+<?xml version="1.0" ?>
 <sdf version="1.4">
   <world name="default">
     <include>
@@ -10,7 +11,7 @@
     </include>
 
     <model name='unit_box_0'>
-      <pose frame=''>5 1 0.5 0 0 0</pose>
+      <pose frame=''>0.7853981633974483 -2.676812432058688 0.5 0 0 0</pose>
       <link name='link'>
         <collision name='box_collision'>
           <geometry>
