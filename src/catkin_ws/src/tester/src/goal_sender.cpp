@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 
     // Create the goal message
     geometry_msgs::PoseStamped goal;
-    goal.pose.position.x = 7.5;
+    goal.pose.position.x = 10;
 	goal.pose.position.y = 0;
 	goal.pose.position.z = 0;
 

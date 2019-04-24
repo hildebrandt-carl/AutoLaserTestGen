@@ -31,8 +31,35 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
   <!--<xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=720 update_rate:=50
                min_angle:=-2.35619 max_angle:=2.35619 min_range:=0.1 max_range:=30.0 robot_namespace:=/" >-->
+
+  <!-- Blind Spot -->
+  <!-- Robot 1 -->
+  <!--<xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=720 update_rate:=50
+               min_angle:=-1 max_angle:=1 min_range:=0.1 max_range:=5.0 robot_namespace:=/" > -->
+
+  <!-- Robot 2 -->
+    <!--<xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=720 update_rate:=50
+               min_angle:=-1.57 max_angle:=1.57 min_range:=0.1 max_range:=10.0 robot_namespace:=/" >-->
+
+
+  <!-- Distance robots -->
+  <!-- Robot 1 -->
   <xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=720 update_rate:=50
-               min_angle:=-1 max_angle:=1 min_range:=1 max_range:=30.0 robot_namespace:=/" >
+               min_angle:=-1.57 max_angle:=1.57 min_range:=0.1 max_range:=5.0 robot_namespace:=/" >
+
+  <!-- Robot 2 -->
+    <!--<xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=720 update_rate:=50
+               min_angle:=-1.57 max_angle:=1.57 min_range:=0.1 max_range:=10.0 robot_namespace:=/" >-->
+
+
+  <!-- Block size robots -->
+  <!-- Robot 1 -->
+  <!--<xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=32 update_rate:=50
+               min_angle:=-1.57 max_angle:=1.57 min_range:=0.1 max_range:=10.0 robot_namespace:=/" > -->
+
+  <!-- Robot 2 -->
+    <!--<xacro:macro name="sick_lms1xx" params="frame:=laser topic:=scan sample_size:=32 update_rate:=50
+               min_angle:=-1.57 max_angle:=1.57 min_range:=0.1 max_range:=10.0 robot_namespace:=/" >-->
     <link name="${frame}">
       <inertial>
         <mass value="1.1" />
