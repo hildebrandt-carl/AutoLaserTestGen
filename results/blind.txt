@@ -1,0 +1,20 @@
+Robot 1:
+sample_size:=720
+update_rate:=50
+min_angle:=-1
+max_angle:=1
+min_range:=0.1
+max_range:=10.0
+Robot 2:
+sample_size:=720
+update_rate:=50
+min_angle:=-1.57
+max_angle:=1.57
+min_range:=0.1
+max_range:=10.0
+
+Block Position:
+Size (XY) = 1 
+Size (Z) = 1
+Position (X) = 0.7853981633974483
+Position (Y) = -0.9727007108907741
