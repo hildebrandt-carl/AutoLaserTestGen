@@ -163,19 +163,7 @@ Use the 2D Nav button to generate new navigation points for the Husky.
 
 
 
+## Authors
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **Carl Hildebrandt** - *Initial work* - [hildebrandt-carl](https://github.com/hildebrandt-carl)
+* **Melony Bennis** - *Initial work* - [mmb4vu](https://github.com/mmb4vu)
