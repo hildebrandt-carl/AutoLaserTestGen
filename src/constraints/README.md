@@ -16,7 +16,7 @@ You need to have Z3 installed in order to run this code. To install that please 
 
 ## Running the code
 
-To run this code you can run:
+To run this code you can type the following commands in the terminal:
 
 ```
 $ python3 <File Name>

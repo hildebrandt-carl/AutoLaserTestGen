@@ -6,17 +6,17 @@ This folder contains the three sets of code.
 * LMS1xx ROS laser scanner driver code
 * Tester code
 
-This is what we used to run the Husky in Simultion. Change the laser scanner properties and test the Husky using the different configurations.
+This is what we used to run the Husky in Simulation. Change the laser scanner properties and test the Husky using the different configurations.
 
 ## Prerequisits
 
-You need to have ROS installed as well as a number of ROS nodes installed in order for this code to work. For detailed instructions please read the InstallingHusky document in the docs folder.
+You need to have ROS installed as well as several ROS nodes installed in order for this code to work. For detailed instructions please read the InstallingHusky document in the docs folder.
 
 ## Running the code
 
 ### World files
 
-If you want to create a world with a new block location. Simply go to the `tester/worlds/` and copy any of the world files. Inside the world file change the following lines, replacing x and y with the position
+If you want to create a world with a new block location. Simply go to the `tester/worlds/` and copy any of the world files. Inside the world file change the following lines, replacing x and y with the position.
 
 ```
 <model name='unit_box_0'>
@@ -51,7 +51,7 @@ Before running make sure everything is compiled you can do this by running the f
 catkin build
 ```
 
-To run the tester which includes collision detection, world visualization, sensor visualization, frontier exploration, SLAM, and goal publisher you can run the following in your terminal
+To run the tester which includes collision detection, world visualization, sensor visualization, frontier exploration, SLAM, and goal publisher you can run the following in your terminal.
 
 ```
 source devel/setup.bash

@@ -4,11 +4,11 @@ The source code is broken into two sections the constraints code and the robotic
 
 ## Constraints
 
-The constraints folder contains three files each of which generates the block positions. More information on prerequistis for this are given in the docs folder.
+The constraints folder contains three files each of which generates the block positions. More information on prerequisites for this are given in the docs folder.
 
 ## Robotic Code
 
-The robotic code constains collision detection, world visualization, sensor visualization, frontier exploration, SLAM, and goal publisher. All of the information about installing it can be found in the docs folder. Informtion on running it can be found in the README inside the catkin_ws.
+The robotic code contains collision detection, world visualization, sensor visualization, frontier exploration, SLAM, and goal publisher. All of the information about installing it can be found in the docs folder. Information on running it can be found in the README inside the catkin_ws.
 
 ## Authors
 

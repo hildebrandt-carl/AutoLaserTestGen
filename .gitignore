@@ -12,3 +12,6 @@ CATKIN_IGNORE
 **/build/
 **/.catkin_tools/
 **/logs/
+
+# Ignore the final video
+*Physical Test Generation - Final*
